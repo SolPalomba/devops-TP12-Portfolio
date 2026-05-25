@@ -83,10 +83,6 @@ jobs:
           SECCIONES=(
             "Stack tecnológico"
             "Proyectos por TP"
-            "Mes 1"
-            "Mes 2"
-            "Mes 3"
-            "Plataformas usadas"
           )
           FALTANTES=0
           for SEC in "${SECCIONES[@]}"; do
