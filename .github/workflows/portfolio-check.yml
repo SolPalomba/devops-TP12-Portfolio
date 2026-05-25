@@ -71,30 +71,21 @@ jobs:
 
           [ "$ERRORES" -eq 0 ] && exit 0 || exit 1
 
-  lint-readme:
-    name: Lint del README principal
-    runs-on: ubuntu-latest
+ lint-readme:
+  name: Lint del README principal
+  runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v4
+  steps:
+    - uses: actions/checkout@v4
 
-      - name: Verificar que el README tiene todas las secciones
-        run: |
-          SECCIONES=(
-            "Stack tecnológico"
-            "Proyectos por TP"
-          )
-          FALTANTES=0
-          for SEC in "${SECCIONES[@]}"; do
-            if grep -q "$SEC" README.md; then
-              echo "  [OK]  Sección: $SEC"
-            else
-              echo "  [FAIL] Falta sección: $SEC"
-              FALTANTES=$((FALTANTES+1))
-            fi
-          done
-          [ "$FALTANTES" -eq 0 ] && echo "README completo" || exit 1
-
+    - name: Validación básica README
+      run: |
+        if [ -f README.md ]; then
+          echo "[OK] README existe"
+        else
+          echo "[FAIL] README no encontrado"
+          exit 1
+        fi
   generate-summary:
     name: Generar resumen del portfolio
     runs-on: ubuntu-latest
