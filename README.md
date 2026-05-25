@@ -21,19 +21,19 @@ Cada TP representa una implementación práctica real, evidenciada mediante repo
 ---
 
 ## Stack tecnológico
-
-| Categoría | Herramientas |
-|---|---|
-| OS / Scripting | Linux (Ubuntu), Bash |
-| Control de versiones | Git, GitHub, Gitflow |
-| Contenedores | Docker, Docker Compose |
-| CI/CD | GitHub Actions |
-| Monitoreo | Prometheus, Grafana |
-| Orquestación | Kubernetes, Helm |
-| IaC | Terraform |
-| Backend | Python, Flask |
-| Base de datos | PostgreSQL |
-| Frontend / Proxy | Nginx |
+|      Categoría           |          Herramientas         |
+|---                       |-                            --|
+| **OS / Scripting**       | Linux (Ubuntu), Bash          |
+| **Control de versiones** | Git, GitHub, Gitflow          |
+| **Contenedores**         | Docker, Docker Compose        |
+| **CI/CD**                | GitHub Actions                |
+| **Monitoreo**            | Prometheus, Grafana, cAdvisor |
+| **Orquestación**         | Kubernetes (kubectl, Helm)    |
+| **IaC**                  | Terraform (provider Docker)   |
+| **Backend**              | Python, Flask, Gunicorn       |
+| **Base de datos**        | PostgreSQL                    |
+| **Proxy / Frontend**     | Nginx                         |
+| **Config**               | YAML, HCL, JSON               |
 
 ---
 
@@ -43,32 +43,29 @@ Cada TP representa una implementación práctica real, evidenciada mediante repo
 
 | TP | Proyecto | Tecnologías | Link |
 |---|---|---|---|
-| TP01 | Automatización del sistema | Bash | https://github.com/SolPalomba/devops-TP01 |
-| TP02 | Usuarios y permisos | Linux | https://github.com/SolPalomba/devops-TP02 |
-| TP03 | Gitflow | Git, GitHub | https://github.com/SolPalomba/devops-TP03 |
-| TP04 | YAML + redes | YAML, Bash | https://github.com/SolPalomba/devops-TP04 |
-
+| 1 | Script de automatización del sistema | Bash, cron | [→ ver repo](https://github.com/SolPalomba/devops-TP01) |
+| 2 | Gestión de usuarios y permisos | Linux, chmod, useradd | [→ ver repo](https://github.com/SolPalomba/devops-TP02) |
+| 3 | Flujo Gitflow completo | Git, GitHub, branching | [→ ver repo](https://github.com/SolPalomba/devops-gitflow) |
+| 4 | YAML multi-entorno + diagnóstico de red | YAML, bash, ping, dig, curl | [→ ver repo](https://github.com/SolPalomba/devops-TP04) |
 ---
 
 ### 5 al 8 — Contenedores y CI/CD
 
 | TP | Proyecto | Tecnologías | Link |
 |---|---|---|---|
-| TP05 | API en Docker | Docker, Flask | https://github.com/SolPalomba/devops-TP05 |
-| TP06 | App multi-contenedor | Docker Compose | https://github.com/SolPalomba/devops-TP06 |
-| TP07 | CI/CD pipeline | GitHub Actions | https://github.com/SolPalomba/devops-TP06 |
-| TP08 | Monitoreo | Prometheus, Grafana | https://github.com/SolPalomba/devops-TP08 |
-
+| 5 | API Python en Docker | Docker, Flask, Gunicorn | [→ ver repo](https://github.com/SolPalomba/devops-TP05) |
+| 6 | App multi-contenedor | Docker Compose, Postgres, Nginx | [→ ver repo](https://github.com/SolPalomba/devops-TP06) |
+| 7 | Pipeline CI/CD completo | GitHub Actions, pytest, Docker Hub | [→ ver repo](https://github.com/SolPalomba/devops-TP06) |
+| 8 | Stack de monitoreo | Prometheus, Grafana, Node Exporter | [→ ver repo](https://github.com/SolPalomba/devops-TP08) |
 ---
 
 ### 9 al 12 — Kubernetes e IaC
-
 | TP | Proyecto | Tecnologías | Link |
 |---|---|---|---|
-| TP09 | Kubernetes app | kubectl | https://github.com/SolPalomba/devops-TP09 |
-| TP10 | Helm + Ingress | Helm | https://github.com/SolPalomba/devops-TP10 |
-| TP11 | Terraform IaC | Terraform | https://github.com/SolPalomba/devops-TP11 |
-| TP12 | Portfolio final | GitHub Actions | https://github.com/SolPalomba/devops-portfolio |
+| 9 | App en Kubernetes | kubectl, Pods, Deployments, Services | [→ ver repo](https://github.com/SolPalomba/devops-TP09) |
+| 10 | Helm Chart + Ingress | Helm, Ingress NGINX, HPA | [→ ver repo](https://github.com/SolPalomba/devops-TP10) |
+| 11 | Infraestructura como Código | Terraform, módulos, state | [→ ver repo](https://github.com/SolPalomba/devops-TP11) |
+| 12 | Portfolio final | GitHub Actions, integración | [→ este repo](https://github.com/SolPalomba/devops-TP12-Portfolio) |
 
 ---
 
