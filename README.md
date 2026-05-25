@@ -2,7 +2,7 @@
 
 # DevOps Portfolio — Path Operaciones1
 
-[![TP07 CI/CD](https://github.com/TU_USUARIO/devops-TP06/actions/workflows/cicd.yml/badge.svg)](https://github.com/SolPalomba/devops-TP06/actions)
+[![TP07 CI/CD](https://github.com/SolPalomba/devops-TP06/actions/workflows/cicd.yml/badge.svg)](https://github.com/SolPalomba/devops-TP06/actions)
 [![Licencia MIT](https://img.shields.io/badge/licencia-MIT-green.svg)](LICENSE)
 [![Hecho con](https://img.shields.io/badge/hecho%20con-Killercoda%20%2B%20KodeKloud-blue.svg)](https://killercoda.com)
 
